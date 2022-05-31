@@ -2,7 +2,10 @@ package leetcode;
 /* The isBadVersion API is defined in the parent class VersionControl.
 boolean isBadVersion(int version); */
 
-class FirstBadVersion extends VersionControl {
+class VersionControl {
+    boolean isBadVersion(int version){return true;}
+}
+class FirstBadVersion extends VersionControl  {
     public int firstBadVersion(int n) {
         int left = 1;
         int right = n;
